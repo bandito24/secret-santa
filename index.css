@@ -1,0 +1,78 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/09/15/30/illustration-3071852_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 2em;
+    
+}
+
+header h1{
+    background-color: hsla(205, 100%, 100%, .50);
+    border-radius: 20px;
+    padding: .25em;
+}
+
+header img{
+    height: 200px;
+    width: auto;
+    display: inline;
+}
+
+
+/* Input Textarea */
+
+#name-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+
+}
+
+#name-input label{
+    position: relative;
+    left: 6em;
+    font-weight: 900;
+    margin-bottom: 4em;
+
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+/* selected names */
+
+/* .selected-names{
+    display: none
+} */
+
+#selected-names h2, #selected-names h3{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(205, 100%, 100%, .50);
+    border-radius: 20px;
+    padding: .25em;
+}
+
+#selected-names button{
+    display: block;
+    padding: .5rem;
+    margin: 2rem;
+    position: relative;
+    left: 7em;
+    top: 3em;
+}
