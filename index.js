@@ -9,11 +9,18 @@ names = document.getElementById('input-names').value;
 names = names.replaceAll(',', '');
 names = names.split(' ')
 names = names.filter(word => word !== 'and')
+names = names.filter(word => word !== '')
     
-    
+
     let nameList = document.getElementById('selected-names');
-    let nameInput = document.getElementById('name-input');
+    let nameInput2 = document.querySelectorAll(".name-input");
     let namesForSanta = document.getElementById('names-for-santa')
+
+    nameList.style.display = 'contents';
+    nameInput2.forEach(input => {
+        input.style.display = 'none';
+    })
+    
 
 
     for(let i=0; i < names.length; i++){
@@ -22,6 +29,7 @@ names = names.filter(word => word !== 'and')
         namesForSanta.appendChild(newListItem);
         
     }
+
    
     // For assigning who each person gives a gift to 
     if(names.length <= 1){
@@ -76,7 +84,7 @@ names = names.filter(word => word !== 'and')
 
 
     document.getElementById('test').innerHTML = chosenName 
-    document.getElementById('test2').innerHTML = value
+
 }
 
 
@@ -85,6 +93,16 @@ names = names.filter(word => word !== 'and')
 let buttonEvent = document.getElementById('button')
 buttonEvent.addEventListener('click', getNames)
 
+
+//for finding who you give your gift to on click
+function clickName(e){
+    let nameIndex = names.indexOf(e.target.textContent)
+    document.getElementById('your-name').innerHTML = chosenName[nameIndex]
+}
+
+let nameButton = document.getElementById('names-for-santa')
+
+nameButton.addEventListener('click', clickName)
 
 
 

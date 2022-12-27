@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700&display=swap" rel="stylesheet">
     <title>Secret Santa!</title>
 </head>
 
@@ -14,7 +15,7 @@
     <img src="./santa-claus-g1da3a7ff8_640.png" alt="Happy Santa">
 </header>
 
-<div id="name-input">
+<div id="name-input" class="name-input">
     <form action="">
         <label for="input-names">Enter all the names of your party</label>
         <br/>
@@ -23,19 +24,25 @@
     </form>
  </div>
        
- <div id="button">
+ <div id="button" class="name-input">
     <button>Input Names :)</button>
 </div>
     
 <div id="selected-names" class="selected-names">
     <h2>Secret Santas</h2>
     <h3>Click your name to find who to give your gift to</h3>
-    <ul id="name-list">
-    <div id="names-for-santa">
-
+    
+    <div id="santa-block">
+        <div id="names-for-santa">
+            <!-- name buttons go here-->
+        </div>
+        <div id="gifts-for">
+            <h2>You're buying a gift for: </h2>
+            <h2 id="your-name"></h2>
+        </div>
     </div>
     <h2 id="test"></h2>
-        
+    <h2 id="test2"></h2>
     
 </div>
 
