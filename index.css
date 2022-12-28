@@ -6,9 +6,24 @@ body{
     font-family: 'life savers';
 }
 
-
-
 /* Header */
+
+#audio-description{
+    position: absolute;
+    left: 2.3em;
+    top: 1.2em;
+    font-weight: bold;
+    background-color: hsla(205, 100%, 100%, .50);
+    border-radius: 20px;
+
+}
+
+audio{
+    width: 200px;
+    height: 20px;
+    position: relative;
+    left: 20px
+}
 
 header{
     display: flex;
@@ -43,9 +58,12 @@ header img{
 
 #name-input label{
     position: relative;
-    left: 6em;
-    font-weight: 900;
+    left: 1.5em;
     margin-bottom: 4em;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: hsla(205, 100%, 100%, .50);
+    border-radius: 20px;
 
 }
 
@@ -92,10 +110,39 @@ header img{
 }
 
 #gifts-for{
-    /* display: flex; */
     position: relative;
     bottom: 4em;
+    opacity: 1;
+    
+
+}
+
+
+
+
+#gifts-for h3{
+    position: relative;
+    top: 1em;
+    animation-name: gifts;
+    animation-duration: 7s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes gifts {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
     
 }
+
+
 
 
