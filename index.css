@@ -11,7 +11,7 @@ body{
 #audio-description{
     position: absolute;
     left: 2.3em;
-    top: 1.2em;
+    top: 1.4em;
     font-weight: bold;
     background-color: hsla(205, 100%, 100%, .50);
     border-radius: 20px;
